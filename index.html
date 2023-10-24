@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <script src="https://kit.fontawesome.com/34d2a7ee78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+       <h1>stone, paper or scissors</h1>
+       <hr class="color-red">
+       <br>
+       <button>Reload</button>
+    </div>
+    <br>
+
+    <div class="container">
+        <h2>Result of the game</h2>
+        <br>
+        <div class="score">
+            <p>User: <span id="userScore">0</span></p>
+            <p>CPU: <span id="computerScore">0</span></p>
+        </div>
+        <br>
+        <div class="choices">
+            <div class="box">
+                <div class="box-buttons">
+                    <button class="user-choice" data-choice="rock">🥌</button>
+                    <button class="user-choice" data-choice="paper">🧻</button>
+                    <button class="user-choice" data-choice="scissors">✂</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-buttons">
+                    <button class="cpu-choice" data-choice="rock">🥌</button>
+                    <button class="cpu-choice" data-choice="paper">🧻</button>
+                    <button class="cpu-choice" data-choice="scissors">✂</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Result</h2>
+
+        <button id="play">play</button>
+        <div class="result">
+            <h4>Result</h4>
+            <p id="roundResult"></p>
+        </div>
+        <button id="restart" style="display: none">Restart Game</button>
+        <div class="history">
+            <h2>Game History - User</h2>
+            <ul id="user-history-list">
+                
+            </ul>
+    
+            <h2>Game History - CPU</h2>
+            <ul id="cpu-history-list">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

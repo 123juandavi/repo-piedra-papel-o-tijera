@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #808080;
+}
+
+.container {
+    background-color: #007bff;
+    width: 740px; 
+    height: 750px;
+    margin: 0 auto; 
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #000;
+    border-radius: 20px;
+}
+
+@keyframes neon {
+    0% {
+        color: #000;
+        text-shadow: 0 0 10px #000;
+    }
+    50% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+    }
+    100% {
+        color: #000;
+        text-shadow: 0 0 10px #000;
+    }
+}
+
+p {
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 1rem;
+    color: #000;
+    animation: neon 1s infinite;
+}
+
+h2 {
+    color: #f00;
+}
+
+h4 {
+    color: #f00;
+}
+
+.color-red {
+    color: #f00;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.score p > span {
+    margin: 0 10px;
+    background-color: #808080;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+button {
+    background-color: #000;
+    color: #ff0000;
+    border-radius: 10rem;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0000ff;
+}
+
+.result {
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+button#restart {
+    background-color: #f00;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box h2 {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff;
+}
+
+.box-buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.box-buttons {
+    margin: 10px;
+}
+
+.box-buttons h2 {
+    font-size: 24px;
+}
+
+.cpu-choice {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.box-1 {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos generales */
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Cambia el ancho del contenedor en pantallas pequeñas */
+        height: auto; /* Ajusta la altura para que se adapte al contenido */
+    }
+
+    .choices {
+        flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
+    }
+
+    .box {
+        flex-direction: column; /* Alinea verticalmente las opciones de usuario y CPU */
+    }
+    
+    .box-buttons {
+        flex-direction: column; /* Alinea verticalmente los botones de usuario y CPU */
+        align-items: center; /* Centra los botones en pantallas pequeñas */
+    }
+}
+
